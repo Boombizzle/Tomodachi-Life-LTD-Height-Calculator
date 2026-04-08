@@ -1,0 +1,224 @@
+/* oooo I'm so stylish, I'm like a mii with makeup */
+
+body {
+    background-color: #ffbb00;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.root-layout {
+    text-align: center;
+    padding: 20px;
+    max-width: 420px;
+    width: 100%;
+    position: relative;
+}
+
+.title-img {
+    max-width: 400px;
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.toggle-link {
+    color: #111b2b;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.input-container {
+    border-radius: 30px;
+    padding: 15px 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 -4px 0 #dadada inset;
+    background-color: #fff;
+}
+
+.input-label, .unit-label {
+    color: #111b2b;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.input-container input {
+    background-color: rgba(0, 0, 0, 0.06); 
+    border-radius: 8px;
+    border: none;
+    color: #111b2b;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    width: 60px;
+}
+
+.input-container input:focus {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+#imperial-inputs { display: none; }
+
+.slider-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.track-container {
+    position: relative;
+    width: 280px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.track-line {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #666666;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #666666;
+    border-radius: 50%;
+    z-index: 2;
+    pointer-events: none;
+}
+.dot.left { left: 0px; }
+.dot.center { left: 50%; transform: translateX(-50%); }
+.dot.right { right: 0px; }
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+}
+
+input[type=range]:focus { outline: none; }
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 50px;
+    width: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 3px solid #ffda71;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 50px;
+    width: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+    border: 3px solid #ffda71;
+    cursor: pointer;
+}
+
+.info-box {
+    background-color: #f9d416;
+    border: 2px solid #fbe984;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+    color: #333333;
+    line-height: 1.8;
+}
+
+.info-box span { font-weight: bold; }
+
+.help-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #111b2b;
+    border: 2px solid #dadada;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.help-btn:hover { background-color: #f0f0f0; }
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1000; 
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #f9d416;
+    border: 2px solid #fbe984;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 380px;
+    width: 90%;
+    text-align: left;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    color: #333333;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.close-btn {
+    background-color: #ffffff;
+    border: 2px solid #f9d416;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 0 -4px 0 #dadada inset;
+}
+
+.close-btn:hover { background-color: #f0f0f0; }
+
+
+.credit-line {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.8;
+}
