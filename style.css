@@ -274,7 +274,7 @@ input[type=range]::-moz-range-thumb {
     text-align: left;
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     color: #333333;
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.5;
 }
 
